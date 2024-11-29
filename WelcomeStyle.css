@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "sf_pro_displayblack_italic";
+  src: url("fonts/sfprodisplayblackitalic-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplayblackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displaybold";
+  src: url("fonts/sfprodisplaybold-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplaybold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displayheavy_italic";
+  src: url("fonts/sfprodisplayheavyitalic-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplayheavyitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displaylight_italic";
+  src: url("fonts/sfprodisplaylightitalic-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplaylightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displaymedium";
+  src: url("fonts/sfprodisplaymedium-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplaymedium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displayregular";
+  src: url("fonts/sfprodisplayregular-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplayregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displaysemibold_italic";
+  src: url("fonts/sfprodisplaysemibolditalic-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplaysemibolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displaythin_italic";
+  src: url("fonts/sfprodisplaythinitalic-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplaythinitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf_pro_displayultraLtIt";
+  src: url("fonts/sfprodisplayultralightitalic-webfont.woff2") format("woff2"),
+    url("fonts/sfprodisplayultralightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  font-family: "sf_pro_displayregular";
+  background-color: #fdfdfd;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 85%;
+}
+
+.logo-jobs {
+  height: 20px;
+}
+
+.welcome a {
+  position: relative;
+  cursor: pointer;
+  background-color: #fdfdfd;
+  border: 1px solid black;
+  color: black;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px;
+  transition: color 0.25s;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.welcome a:hover {
+  background-color: black;
+  color: white;
+}
+.hello {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hello img {
+  background-color: #fdfdfd;
+  margin-top: 100px;
+
+  background-color: black;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  padding: 10px;
+}
+
+.languages a {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.chooseLanguage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: gray;
+}
