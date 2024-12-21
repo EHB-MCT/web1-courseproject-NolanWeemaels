@@ -75,8 +75,19 @@ body {
   color: #000;
   font-family: "sf_pro_displayregular";
   background-color: white;
+  overflow-x: hidden;
+  width: 100%;
+
 }
 
+h1{
+  padding: 5%;
+}
+
+h2{
+  padding: 5%;
+  text-align: center;
+}
 .navigation {
   width: calc(100% - 20px);
   height: 40px;
@@ -129,48 +140,7 @@ body {
   scale: 1 1;
 }
 
-.dropbtn {
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-radius: 6px;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  border-radius: 6px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  border-radius: 6px;
-}
-
-.dropdown:hover .dropbtn {
-  border-radius: 6px;
-}
 
 header {
   height: 100vh;
@@ -183,6 +153,8 @@ header {
   align-content: center;
   align-items: flex-end;
   color: black;
+  width: 100%;
+  
 }
 
 .scroll {
@@ -249,22 +221,27 @@ header {
 
 h1 {
   font-size: 56px;
-  margin-left: 100px;
+  
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
+  
   font-size: 32px;
 }
 
-.launch h2{
-  font-size:56px ;
-  margin-left: 100px;
-  align-items:start;
-  margin-right: 100px;
-  color: white;
+.wrapper h1{
+  text-align: center;
 }
+
+.wrapper h3{
+  text-align: center;
+}
+
+
+
+
+
+
 
 .navigation2 {
   display: flex;
@@ -299,6 +276,93 @@ h2 {
   padding: 50px;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  
+}
+
+
+
+
+.intro-flex {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  color: #a3a3a3;
+}
+
+.episodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.episodes div {
+  width: 24%;
+}
+
+.episodes div img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation li.no-mobile {
+    display: none;
+  }
+  .episodes div {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header {
+    background-image: none;
+    background-color: #2a8ded;
+  }
+  .intro {
+    width: 100%;
+  }
+  .episodes div {
+    width: 100%;
+  }
+  .logo-onepiece {
+    width: 100%;
+  }
+  .header{
+    height: 20%;
+  }
+  
+}
+
+.episodes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+ padding: 5%;
+}
+
+.navigation li {
+  padding-right: 0;
+}
+
+.navigation li:last-child {
+  padding-left: 10px;
+}
+
 .list img {
   height: 100px;
   padding-left: 10px;
@@ -308,48 +372,6 @@ h2 {
   display: flex;
   justify-content: center;
 }
-
-.launch {
-  background-color: black;
-  align-items: center;
-  padding: 50px;
-  width: 100vw;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-  float: left;
-}
-
-.launch div {
-  width: 50%-5rem;
-  display: flex;
-  flex: 2;
-  flex-wrap: wrap;
-}
-
-.launch img {
-  width: 500px;
-  border-radius: 20px;
-}
-
-.launch div {
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 5px;
-  float: left;
-}
-
-.launch h1 {
-  font-size: 28px;
-  margin-left: 0px;
-  margin-left: 25%;
-  color: white;
-}
-
-.launch p{
-  color: white;
-}
-
 
 footer {
   background-color: black;
@@ -467,10 +489,9 @@ div.social {
   margin-top: 50px;
 }
 
-
-/* Minimum height */
-@media (min-height: 1000px) {
-  .navigation{
-    background-color: red;
+@media screen and (max-width: 1170px){
+  .navigation2{
+   display: none;
   }
 }
+
