@@ -77,100 +77,92 @@ body {
   background-color: white;
 }
 
-.navigation {
-  width: calc(100% - 20px);
-  height: 40px;
-  background-color: #fff;
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  align-items: center;
+  
+}
+
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  padding-left: 40%;
+  justify-content: flex-end;
   padding: 10px;
   position: fixed;
-  opacity: 85%;
-  backdrop-filter: blur(30px);
+
+  
 }
 
-.logo-jobs {
-  height: 20px;
+.jobs-logo img{
+  width: 20px;
+
+}
+.nav-links li {
+  margin: 0 10px;
 }
 
-.navigation li {
-  display: inline;
-  padding-right: 20px;
-  backdrop-filter: blur(30px);
-}
-
-.navigation a {
-  position: relative;
-  cursor: pointer;
-  color: #000;
-  font-size: 16px;
-  padding: 0.5rem 1rem;
-  transition: color 0.25s;
-  text-decoration: none;
-}
-
-.navigation a::after {
-  position: absolute;
-  content: "";
-  inset: 0;
-  scale: 1 0;
-  z-index: -1;
-  transition: 0.45s;
-  border: 10px;
-}
-
-.navigation a:hover {
-  color: grey;
-}
-
-.navigation a:hover::after {
-  scale: 1 1;
-}
-
-
-.dropbtn {
+.nav-links a {
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
   text-decoration: none;
-  display: block;
-  border-radius: 6px;
+  padding: 5px 10px;
+  transition: background 0.3s;
+  font-size: 20px;
+  text-align: center;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-  border-radius: 6px;
+.nav-links a:hover {
+  background: #555;
+  border-radius: 5px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-  border-radius: 6px;
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: end;
 }
 
-.dropdown:hover .dropbtn {
-  border-radius: 6px;
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
 }
+
+/* Responsieve styling */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      border-radius: 5px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+}
+
 
 header {
   height: 100vh;
@@ -289,3 +281,4 @@ h1 {
 .container3 img:hover {
   width: 45%;
 }
+

@@ -129,56 +129,7 @@ body {
   scale: 1 1;
 }
 
-/* Dropdown Button */
-.dropbtn {
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  background-color: black;
-}
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-radius: 6px;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: black;
-  border-radius: 6px;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-  border-radius: 6px;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  border-radius: 6px;
-}
 header {
   height: 100vh;
   background-image: url(images/Jobs_iLife.jpg);
@@ -193,6 +144,11 @@ header {
 
 h1 {
   font-size: 56px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
 }
 
 .wrapper {
@@ -346,4 +302,130 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 16px;
+}
+
+footer {
+  background-color: black;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+footer * {
+  
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+footer h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+footer li:not(:first-child) {
+  margin-top: 0.8em;
+}
+footer ul li a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #2a8ded;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+footer input,
+footer button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+footer button {
+  background-color: #c7940a;
+  color: #ffffff;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #27bcda;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.imagelogo{
+  max-width:100px;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  header {
+    background-image: none;
+    background-color: #2a8ded;
+  }
+  
+  
 }
