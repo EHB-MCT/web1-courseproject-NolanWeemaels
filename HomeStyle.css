@@ -391,7 +391,11 @@ header {
 @media screen and (max-width: 500px) {
   .wrapper3{
     padding-top: 0px;
-    padding-bottom: 600px;
+    padding-bottom: 60px;
+  }
+  .wrapper2{
+    padding-top: 0px;
+    padding-bottom: 60px;
   }
   h1{
     text-align: center;
@@ -406,6 +410,8 @@ header {
   text-align:center;
   width: 100%;
   margin-bottom: 0;
+  box-sizing: border-box;
+  overflow: hidden;
   }
   
   .footer .row{
@@ -453,4 +459,18 @@ header {
   .footer .row a i{
   margin:0% 3%;
   }
+  }
+
+  @media screen and (max-width: 768px) {
+ 
+    header {
+      
+      background-image: url(images/jobsVerticalWhite.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+
+    }
+    
+    
   }
