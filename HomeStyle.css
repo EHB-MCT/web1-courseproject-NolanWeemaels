@@ -184,10 +184,11 @@ body {
 
 
 header {
-  height: 100vh; /* Gebruik aangepaste hoogte voor iOS */
+  height: calc(var(--vh, 1vh) * 100); /* Dynamische hoogte voor iOS */
   background-image: url(images/hero-header.jpg);
-  background-size: cover;
-  background-position: center center;
+  background-size: cover; /* Laat de afbeelding volledig dekken */
+  background-position: center center; /* Gecentreerde positie */
+  background-attachment: fixed;
   justify-content: space-evenly;
   justify-items: center;
   display: flex;
