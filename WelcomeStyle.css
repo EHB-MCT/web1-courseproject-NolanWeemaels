@@ -144,3 +144,12 @@ body {
   margin-bottom: 10px;
   color: gray;
 }
+
+@media screen and (max-width: 768px) {
+  .hello img{
+    width: 40%;
+  }
+  .languages, .chooseLanguage{
+    margin-top: 80%;
+  }
+}
