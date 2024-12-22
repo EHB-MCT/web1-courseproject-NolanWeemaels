@@ -4,11 +4,13 @@ This Readme provides all the sources used to create this website.
 
 ## Sources + code
 
-*Instagram: 
-    *Softwarechemist. (2024, augustus). Trick and Treat Toggle Switch animation| Using HTML and CSS. Geraadpleegd op 19 november 2024, van https://www.instagram.com/p/C_HwXxcy7A1/
-    * ```css
 
-    
+## Instagram: 
+### Source:
+    Softwarechemist. (2024, augustus). Trick and Treat Toggle Switch animation| Using HTML and CSS. Geraadpleegd op 19 november 2024, van https://www.instagram.com/p/C_HwXxcy7A1/
+     
+### Code:
+
     .container2 {
         display: flex;
         flex-wrap: wrap;
@@ -39,32 +41,184 @@ This Readme provides all the sources used to create this website.
         display: none;
     }
 
-```bash
-pip install foobar
-```
+## Instagram
+### Source:
+    uvais.codes. (2024, oktober). Infinite Scrolling Marquee. Instagram. Geraadpleegd op 22 november 2024, van https://www.instagram.com/p/DCjU4NTzr4t/
 
-## Usage
+### Code:
 
-```python
-import foobar
+    .scroll {
+        position: relative;
+        display: flex;
+        width: 85%;
+        overflow: hidden;
+        padding-top: 100px;
+        margin: auto;
+        padding: 10px;
 
-# returns 'words'
-foobar.pluralize('word')
+    -webkit-mask-image: linear-gradient(
+        90deg,
+        transparent,
+        #fff 30%,
+        #fff 70%,
+        transparent
+    );
+    }
 
-# returns 'geese'
-foobar.pluralize('goose')
+    .scroll div {
+        white-space: nowrap;
+        animation: animate var(--t) linear infinite;
+    }
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+    .scroll div:nth-child(2) {
+        animation: animate2 var(--t) linear infinite;
+    }
 
-## Contributing
+    @keyframes animate {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+        transform: translateX(-100%);
+        }
+    }
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+    @keyframes animate2 {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-200%);
+        }
+    }
 
-Please make sure to update tests as appropriate.
+    .scroll div span {
+        display: inline-flex;
+        margin: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background: #333;
+        color: #fff;
+        transition: 0.5s;
+    }
 
-## License
+    .scroll div span:hover {
+        background: blue;
+        cursor: pointer;
+    }
 
-[MIT](https://choosealicense.com/licenses/mit/)
+## W3Schools
+
+### Source:
+    W3Schools.com. (z.d.). Geraadpleegd op 21 december 2024, van https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+### Code:
+#### HTML:
+     <nav class="navbar">
+      <div class="jobs-logo">
+        <a href="index.html"><img src="images/appleLogoSteveJobsWhite.png"></a>
+        
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+          <li><a href="HomeFR.html">Accueil</a></li>
+          <li><a href="iLifeFR.html">iVie</a></li>
+          <li><a href="ProductsFR.html">Produits</a></li>
+          
+      </ul>
+     </nav>
+
+#### CSS:
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        opacity: 85%;
+        background: transparent;
+        background-color: #333;
+        color: white;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        border-bottom: gray;
+        z-index: 99999999;
+    }
+
+
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-left: 40%;
+        padding: 10px;
+        position: fixed;
+        padding-right: 100px;
+        align-items: end;
+    }
+
+  
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        transition: background 0.3s;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 60px;
+        margin-left: 60px;
+        font-size: 18px;
+    }
+
+    .nav-links a:hover {
+         background: #555;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: end;
+        padding-right: 50px;
+    }
+
+    .menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+    }
+
+    @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    }
