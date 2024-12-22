@@ -7,6 +7,8 @@ This Readme provides all the sources used to create this website.
 *Instagram: 
     *Softwarechemist. (2024, augustus). Trick and Treat Toggle Switch animation| Using HTML and CSS. Geraadpleegd op 19 november 2024, van https://www.instagram.com/p/C_HwXxcy7A1/
     * ```css
+
+    
     .container2 {
         display: flex;
         flex-wrap: wrap;
