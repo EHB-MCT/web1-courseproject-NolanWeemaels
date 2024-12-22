@@ -194,6 +194,24 @@ header {
   align-content: center;
   align-items: flex-end;
   width: 100%;
+  html.is-ios #custom-phone-grid,
+  html.is-ios .cover-region-phone .cover-inner,
+  html.is-ios #grid,
+  html.is-ios .cover-region-desktop .cover-inner{
+        background-size: contain!important;
+        background-attachment: scroll!important;
+        background-repeat: repeat!important;
+        background-position: unset!important;
+}
+}
+html.is-ios #custom-phone-grid,
+  html.is-ios .cover-region-phone .cover-inner,
+  html.is-ios #grid,
+  html.is-ios .cover-region-desktop .cover-inner{
+        background-size: contain!important;
+        background-attachment: scroll!important;
+        background-repeat: repeat!important;
+        background-position: unset!important;
 }
 
 .wrapper {
