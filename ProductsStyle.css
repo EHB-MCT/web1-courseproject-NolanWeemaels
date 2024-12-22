@@ -189,6 +189,9 @@ h1{
   margin-left: 50px;
 }
 
+header h1{
+  margin-left: 0px;
+}
 
 header {
   height: 100vh;
