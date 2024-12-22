@@ -186,15 +186,12 @@ header {
   height: 100vh;
   background-image: url(images/hero-header.jpg);
   background-size: cover;
+  background-position: top right;
   justify-content: space-evenly;
   justify-items: center;
   display: flex;
   align-content: center;
   align-items: flex-end;
-  -webkit-background-size: cover;
-  width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
     
   
 }
